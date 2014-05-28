@@ -1,5 +1,5 @@
 # Dependencies
-markdown:         rdiscount
+markdown:         redcarpet
 pygments:         true
 
 # Permalinks
@@ -7,24 +7,34 @@ permalink:        pretty
 
 # Setup
 title:            Seonho Oh
-tagline:          'The personal blog'
-description:      'The personal blog of Seonho Oh'
-url:              http://seonho.github.io
+#tagline:          'The personal blog'
+description:      'Think different. Being positive.'
 
 author:
   name:           'Seonho Oh'
-  url:            https://twitter.com/serioush
+  twitter:        seriousoh
+  github:         seonho
+  linkedin:       seonho
 
 paginate:         1
 
 # Custom vars
 version:          1.0.0
 
-github:
-  repo:           https://github.com/seonho
+redcarpet:
+    extensions:
+      - no_intra_emphasis
+      - fenced_code_blocks
+      - tables
+      - strikethrough
+      - superscript
+      - autolink
+      - hard_wrap
 
-# This is the list of pages to include in the header of the website.
-pages_list: {'About':'/about', 'Archive':'/archive','Feed':'/atom.xml'}
+tag_page_layout: tag_page
+tag_page_dir: tag
+#tag_feed_layout: tag_feed
+#tag_feed_dir: tag
 
 # Allow URL redirects:
 # * https://help.github.com/articles/redirects-on-github-pages

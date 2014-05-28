@@ -1,9 +1,10 @@
 ---
 layout: post
-title: LaTex Package: pdfcomment
+title: LaTex Package - pdfcomment
 comments: true
 redirect_from: "2014/05/22/latex-package-pdfcomment/"
 permalink: latex-package-pdfcomment
+tags: [LaTeX, Package, pdfcomment]
 ---
 
 [pdfcomment](http://www.ctan.org/pkg/pdfcomment) 패키지는 LaTeX에서 pdf 파일에 annotation과 comment를 추가할 수 있게 해준다.
@@ -24,16 +25,15 @@ permalink: latex-package-pdfcomment
 	- markup, color를 지정할 수 있다.
 
 사용예
+
 ```latex
 \pdfmarkupcomment[markup=StrikeOut, color=red]{이 문장은 취소선으로 표시됩니다.}{여기에 comment를 작성합니다.}
 
 \pdfmarkupcomment[markup=Underline, color=red]{이 문장은 밑줄 표시됩니다.}{여기에 comment를 작성합니다.}
 
 \pdfmarkupcomment[markup=Highlight, color=yellow]{이 문장은 highlight로 표시됩니다.}{여기에 comment를 작성합니다.}
-
 ```
 
 ## 참고
 
 [도은님의 pdfcomment 소개](http://doeun.blogspot.kr/2010/10/latex-package-pdfcomment.html)
-

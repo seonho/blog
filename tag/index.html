@@ -1,0 +1,17 @@
+---
+layout: default
+title: Seonho Oh - Tags
+category: tag
+---
+
+<section class="inner">
+  <ul>
+    {% for post in site.posts %}
+      {% for tag in post.tags %}
+
+          <li><a href="/tag/{{ tag }}">{{ tag }}</a></li>
+
+      {% endfor %}
+    {% endfor %}
+  </ul>
+</section>

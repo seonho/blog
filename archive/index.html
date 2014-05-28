@@ -1,0 +1,20 @@
+---
+layout: default
+title: Seonho Oh - Blog
+category: archive
+---
+
+<section class="inner">
+  <p>My thoughts on Research, Technology, Programming, Tools and Etc.</p>
+  </br>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-date">{{ post.date | date_to_string }}</span>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        <br />
+        <span class="description">{{ post.description }}</span>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
