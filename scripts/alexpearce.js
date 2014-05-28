@@ -104,7 +104,7 @@ var layoutResultsPage = function(property, value, posts) {
         + posts[i].date.day + ' ' + posts[i].date.month + ' ' + posts[i].date.year
         + '</span>'
         // Tags
-        + tagsList
+        //+ tagsList
         + '</li>'
     );
   }

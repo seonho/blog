@@ -20,18 +20,20 @@ layout: default
   </div>
 
   {% if page.tags %}
+  <div class="post">
   <ul class="tags">
-    tags:
+    Tag> 
     {% for tag in page.tags %}
       <li><a href="/search/?tags={{ tag | downcase }}">{{ tag | downcase }}</a></li>
     {% endfor %}
   </ul>
+  </div>
   {% endif %}
 </article>
 
 <script defer src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <!-- tag, category search -->
-<script defer src="/js/alexpearce.js"></script>
+<script defer src="/scripts/alexpearce.js"></script>
 
 <!--<section class="post-footer-self-promotion inner">
   <a href="https://twitter.com/intent/follow?screen_name=ssaunier" target="_blank">
