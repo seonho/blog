@@ -1,0 +1,56 @@
+---
+layout: default
+---
+
+{% if page.photo %}
+<div class="post-photo" style="background-image: url('/images/posts/{{ page.photo }}')">
+
+</div>
+{% endif %}
+
+<article>
+  <h1 class="inner">
+    {{ page.title }}
+  </h1>
+
+  <p class="meta">{{ page.date | date: "%A %-d %B %Y" }}</p>
+
+  <div class="post">
+    {{ content }}
+  </div>
+
+  {% if page.tags %}
+  <ul class="tags">
+    tags:
+    {% for tag in page.tags %}
+      <li><a href="/search/?tags={{ tag | downcase }}">{{ tag | downcase }}</a></li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+</article>
+
+<script defer src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<!-- tag, category search -->
+<script defer src="/js/alexpearce.js"></script>
+
+<!--<section class="post-footer-self-promotion inner">
+  <a href="https://twitter.com/intent/follow?screen_name=ssaunier" target="_blank">
+    <img class="avatar" src="/images/sebastien_saunier.jpg" />
+  </a>
+  <p>
+    Thanks for reading! Do you want to keep up with what I do?
+    <a href="https://twitter.com/intent/follow?screen_name=ssaunier">Follow me on Twitter</a> or better,
+
+    <form action="http://saunier.us8.list-manage.com/subscribe/post?u=3e666bd315f84f1bbdfe80c3b&amp;id=0494cf26c5" method="post"target="_blank">
+      <input type="email" class="form-control" name="EMAIL" placeholder="Enter your email address"
+        ><input type="submit" value="Subscribe to my newsletter" >
+      Fear not, I hate spam too.
+    </form>
+  </p>
+</section>
+-->
+<div class="separator"></div>
+
+<section class="comments inner">
+  {% include comments.html %}
+</section>
