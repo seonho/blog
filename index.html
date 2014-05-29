@@ -18,16 +18,15 @@ category: home
 
       {{ post.content }}
 
+      {% if post.tags %}
+      <ul class="tags">
+        Tags>
+        {% for tag in post.tags %}
+          <li><a href="/search/?tags={{ tag | downcase }}">{{ tag }}</a></li>
+        {% endfor %}
+      </ul>
+      {% endif %}
     </div>
-
-    {% if post.tags %}
-    <ul class="tags">
-      tags:
-      {% for tag in post.tags %}
-        <li><a href="/search/?tags={{ tag | downcase }}">{{ tag | downcase }}</a></li>
-      {% endfor %}
-    </ul>
-    {% endif %}
 
     {% endfor %}
   </div>

@@ -4,7 +4,7 @@ title: Github에 Jekyll을 이용한 블로그 만들기
 comments: true
 redirect_from: "/2014/05/01/github-pages-jekyll/"
 permalink: github-pages-jekyll
-tags: [github, jekyll, blog]
+tags: [Github, jekyll, blog]
 ---
 
 [Github](http://github.com)에서는 Pages라는 기능을 제공하는데,

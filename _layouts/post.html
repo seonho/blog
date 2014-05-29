@@ -17,18 +17,17 @@ layout: default
 
   <div class="post">
     {{ content }}
+
+    {% if page.tags %}
+    <ul class="tags">
+      Tag>
+      {% for tag in page.tags %}
+        <li><a href="/search/?tags={{ tag | downcase }}">{{ tag }}</a></li>
+      {% endfor %}
+    </ul>
+    {% endif %}
   </div>
 
-  {% if page.tags %}
-  <div class="post">
-  <ul class="tags">
-    Tag> 
-    {% for tag in page.tags %}
-      <li><a href="/search/?tags={{ tag | downcase }}">{{ tag | downcase }}</a></li>
-    {% endfor %}
-  </ul>
-  </div>
-  {% endif %}
 </article>
 
 <script defer src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>

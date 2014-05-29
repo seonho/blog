@@ -5,6 +5,7 @@
     <!--<a class="{% if page.category == 'portfolio' %} selected {% endif %}" href="/portfolio/">Portfolio</a>-->
     <!--<a class="{% if page.category == 'contact' %} selected {% endif %} contact" href="/contact/">Contact</a>-->
     <a class="{% if page.category == 'archive' %} selected {% endif %}" href="/archive/">Archive</a>
+    <a class="{% if page.category == 'tag' %} selected {% endif %}" href="/tag/">Tag</a>
     <!--<a href="https://github.com/ssaunier">Github</a>-->
   </nav>
   <div class="pull-right right logo">
