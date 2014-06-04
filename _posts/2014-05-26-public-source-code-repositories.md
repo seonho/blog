@@ -4,7 +4,7 @@ title: Public source code repositories
 comments: true
 redirect_from: "2014/05/26/public-source-code-repositories/"
 permalink: public-source-code-repositories
-tags: [Research, Repository, Human Pose Estimation, Dense Trajectory, Temporal Alignment, 3D, Reconstruction, Code, GitHub]
+tags: [Research, Repository, 'Human Pose Estimation', 'Dense Trajectory', 'Temporal Alignment', 3D, Reconstruction, Code, GitHub]
 ---
 
 This is collections of public source code for human pose estimation and 3D reconstruction from monocular video.
