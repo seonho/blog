@@ -39,6 +39,7 @@ var getParam = function(param) {
 //  array of post objects
 var filterPostsByPropertyValue = function(posts, property, value) {
   var filteredPosts = [];
+  value = decodeURIComponent(value);
   // The last element is a null terminator
   posts.pop();
   for (var i in posts) {
@@ -76,6 +77,7 @@ var layoutResultsPage = function(property, value, posts) {
   // Make sure we're on the search results page
   var $container = $('#results');
   if ($container.length == 0) return;
+  value = decodeURIComponent(value);
   
   // Update the header
   var str = majusculeFirst(property) + " Listing for ‘" + majusculeFirst(value) + '’';
