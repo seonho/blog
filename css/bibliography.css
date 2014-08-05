@@ -1,0 +1,17 @@
+.bibliography {
+    list-style-type: none;
+    list-style-type: decimal !ie; /*IE 7- hack*/     
+    counter-reset: li-counter;
+}
+
+.bibliography li {
+    position: relative;
+    padding-left: 0.5em;
+}
+
+.bibliography li:before {
+    position: absolute;
+    left: -1em; 
+    content: '[' counter(li-counter) ']';
+    counter-increment: li-counter;
+}

@@ -38,3 +38,6 @@ gems:
 
 exclude:
   - Rakefile
+
+scholar:
+  style: ./csl/ieee-without-number.csl
