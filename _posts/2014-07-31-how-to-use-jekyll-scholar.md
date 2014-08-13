@@ -7,9 +7,8 @@ permalink: how-to-use-jekyll-scholar
 tags: [Jekyll, Plugins, jekyll-scholar, Markdown]
 ---
 
-논문을 인용해 봅시다{% cite shoh2013fit %}.
+논문을 인용해 봅시다 {% cite shoh2013fit %}.
 
-<!--1. {% reference shoh2013fit %}-->
+### Reference
 
 {% bibliography --cited %}
-
