@@ -1,9 +1,11 @@
+---
 layout: post
 title: 건물 도면 출력하기
 comments: true
 redirect_from: "2014/08/26/how-to-print-building-floor-plan/"
 permalink: how-to-print-building-floor-plan
 tags: [건물, 도면, 국토교통부, 세움터, 전유부, 총괄표제부, 표제부]
+---
 
 [세움터](http://www.eais.go.kr)에서 출력이 가능하다.
 
